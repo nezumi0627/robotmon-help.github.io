@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>機能一覧と説明</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f8f8f8;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .thanks-section ul li {
+            background: none;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+
+        .thanks-section p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            button {
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>機能一覧と説明</h1>
+
+    <section id="thanks-section" class="thanks-section">
+        <h2>感謝の言葉</h2>
+        <ul>
+            <li>Thanks ttung for improving image recognition and adding the send heart function</li>
+            <li>Create by Nezumi(ねずみ) Discord:nezumi_0627</li>
+            <li>Thanks Chris Kwan's and Melissa Stinson's great help</li>
+            <li>質問、バグの報告等はDiscordまで</li>
+            <li><b
+                    style="color: red">無料版を使用している場合、30分ごとにScriptの自動操作が終了します。予めご了承ください。</b><br>また、XRobotmonに関する権利や情報については一切保有しておらず、質問やトラブル、このScriptを使用した場合でのアカウントの停止等が発生した場合、当方は一切の責任を負いません。
+            </li>
+        </ul>
+        <p>最終更新日: 2024-02-01 23:14:11</p>
+    </section>
+
+    <section id="language-section">
+        <h2>対応言語</h2>
+        <p>対応言語: 日本語, 英語</p>
+        <div class="button-container">
+            <button onclick="saveLocale('en-US')">英語</button>
+            <button onclick="saveLocale('zh-TW')">日本語</button>
+        </div>
+    </section>
+
+    <section id="features-section">
+        <h2>機能一覧</h2>
+
+        <h3>アプリ起動と設定</h3>
+        <ul>
+            <li>アプリの自動起動(端末や環境によっては、起動できない可能性があります)</li>
+            <li>特別なスクリーン比率(Long Screen) (ゲーム内で開始してください)</li>
+            <li>日本版アプリですか？</li>
+        </ul>
+
+        <h3>ゲームプレイ</h3>
+        <ul>
+            <li>自動プレイ機能</li>
+            <li>ボム消去自動化</li>
+            <li>+Score アイテム使用</li>
+            <li>+Coin アイテム使用</li>
+            <li>+Exp アイテム使用</li>
+            <li>+Time アイテム使用</li>
+            <li>5>4 アイテム使用</li>
+            <li>スキルの待機時間(秒単位で設定可能)</li>
+            <li>スキルのレベル調整</li>
+            <li>スキルのタイプを選択可能（例: バースト型、ドナルド、モアナなど）</li>
+        </ul>
+
+        <h3>ハート機能</h3>
+        <ul>
+            <li>ハートをまとめて受け取る</li>
+            <li>ハートを1つずつ受け取る</li>
+            <li>初めの人をスキップする機能</li>
+            <li>ルビーをスキップする機能</li>
+            <li>メールボックスの最大開封回数設定</li>
+            <li>受け取りの最大時間設定</li>
+        </ul>
+
+        <h3>ハート送信</h3>
+        <ul>
+            <li>ハートの自動送信機能</li>
+            <li>スコア0のユーザーにハートを送る機能</li>
+            <li>送信の最大時間設定</li>
+            <li>送信者を記録する機能</li>
+        </ul>
+
+        <h3>実験的な機能</h3>
+        <ul>
+            <li><b style="color: red">実験的な機能: すべての環境で動作するとは限りません。</b></li>
+            <li>BOXの自動購入機能</li>
+        </ul>
+
+    </section>
+
+</body>
+
+</html>
